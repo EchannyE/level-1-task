@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product REST API Frontend</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Product Manager</h1>
+    <p>Simple frontend connected to a REST API</p>
+
+    <div id="statusMessage" class="status-message" aria-live="polite"></div>
+
+    <form id="productForm">
+      <input type="text" id="name" placeholder="Product name" required />
+      <input type="number" id="price" placeholder="Product price" required />
+      <button type="submit" id="submitButton">Add Product</button>
+      <button type="button" id="cancelEditButton" class="secondary-btn hidden">Cancel</button>
+    </form>
+
+    <h2>Products</h2>
+    <div id="productList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
